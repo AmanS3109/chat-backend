@@ -27,6 +27,10 @@ services:
     ports:
       - '5433:5432'  # ✅ Map 5433 on host to 5432 in container
 
+  redis:
+    image: redis:7
+    container_name: chat-redis
+
 volumes:
   pgdata:
 
